@@ -1,0 +1,42 @@
+.tab-contacts {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+
+  color: #000000;
+
+  &__map {
+    width: 431px;
+    height: 271px;
+  }
+
+  &__info-item {
+    margin-bottom: 26px;
+  }
+
+  &__info-item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 7px;
+  }
+
+  &__info-item-value {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .tab-contacts {
+    width: auto;
+  }
+}
+
+@media (max-width: 670px) {
+  .tab-contacts {
+    flex-wrap: wrap;
+  }
+}

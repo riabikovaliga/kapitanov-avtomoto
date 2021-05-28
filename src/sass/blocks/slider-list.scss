@@ -1,0 +1,24 @@
+.slider-list {
+  @include reset-list();
+  overflow: hidden;
+
+  &__image {
+    display: block;
+  }
+
+  &__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .slider-list {
+    &__image {
+      width: 100%;
+    }
+  }
+}

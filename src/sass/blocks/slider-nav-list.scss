@@ -1,0 +1,12 @@
+.slider-nav-list {
+  @include reset-list();
+  width: 435px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 970px) {
+  .slider-nav-list {
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.btn-slider-nav {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #D7D9DF;
+  color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    border-color: #BD0C21;
+    @include hover-animation();
+  }
+
+  &__icon {
+    stroke: #48494D;
+
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    &--disabled {
+      stroke: #D7D9DF;
+    }
+  }
+}
